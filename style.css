@@ -56,7 +56,8 @@ html {
 }
 
 body {
-  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  /* font-family: 'Encode Sans Semi Expanded', sans-serif; */
   background: rgba(242, 242, 242, .6);
   margin: 0;
 }
@@ -111,11 +112,17 @@ body::-webkit-scrollbar {
 
 /*JUMBOTRON*/
 .jumbotron {
+  position: relative;
   height: 100vh; /*height to 100% of view height*/
   background: var(--primary-color); /*background color to blue*/
   margin-bottom: 0; /*no bottom margin*/
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  color: #fff;
 }
 
 .video-container {
@@ -151,23 +158,23 @@ body::-webkit-scrollbar {
 .content {
   display: flex;
   flex-direction: column;
+  z-index: 9;
   /* padding: 227px 0; */
 }
 
 .jumbotron-text {
   /*TAGLINE UNDER NAME*/
-  font-weight: 400;
+  font-weight: 100;
   font-size: 2em;
   color: white;
   text-align: center;
   padding-top: 150px;
-  z-index: 9;
 }
 
 .jumbotron-text h1 {
   /*YOUR NAME*/
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 500;
   font-size: 2.5em;
   margin-bottom: 10px;
 }
@@ -177,10 +184,6 @@ body::-webkit-scrollbar {
 }
 
 /*SOCIAL LINKS*/
-.jumbotron-social {
-  z-index: 9;
-}
-
 .ul-social {
   text-align: center;
   padding-left: 0;
@@ -268,6 +271,7 @@ h2 {
 }
 
 .content-body {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
   line-height: 1.5;
   color: rgba(0,0,0,.75);
 }
