@@ -13,6 +13,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.umd.min.js"></script>
   <script src="index.js"></script>
 </head>
 
@@ -20,16 +22,17 @@
 
   <!-- BEGIN NAVBAR -->
   <div class="navbar navbar-default">
+    <a href="#home">Home</a>
+    <a href="#skills">Skills</a>
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
     <a href="#education">Education</a>
     <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </div>
   <!-- END NAVBAR -->
 
-  <div class="container">
+  <div id="home" class="container">
 
     <!-- HEADER -->
     <div class="jumbotron">
@@ -60,8 +63,8 @@
                   aria-hidden="true"></i></a>
             </li>
             <li class="li-social-links">
-              <a class="social" href="https://www.instagram.com/thousif5" target="_blank"><i class="fa fa-instagram glow"
-                  aria-hidden="true"></i></a>
+              <a class="social" href="https://www.instagram.com/thousif5" target="_blank"><i
+                  class="fa fa-instagram glow" aria-hidden="true"></i></a>
             </li>
             <li class="li-social-links">
               <a class="social" href="https://twitter.com/tthousif5" target="_blank"><i class="fa fa-twitter glow"
@@ -153,7 +156,8 @@
           <h2>About</h2>
         </div>
         <div class="content-body">
-          <p>I make websites and UI/UX designs. I have a fulltime experience of 1+ years as Full Stack Web Developer. I'm a tech savy,
+          <p>I make websites and UI/UX designs. I have a fulltime experience of 1+ years as Full Stack Web Developer.
+            I'm a tech savy,
             fascinated about new technologies and System Designing. Will be playing football/eSports in weekends.
             Love to hangout with friends.</p>
         </div>
@@ -282,49 +286,26 @@
     </div>
     <!-- END PROJECTS -->
 
-    <!-- BEGIN SKILLS -->
-    <!-- <div class="row white box-shadow">
-        <div class="side-content"></div>
-        <div class="main-content">
-          <div class="content-header">
-            <a class="anchor" name="skills"></a>
-            <h2>Skills</h2>
-          </div>
-          <div class="content-body">
-            <ul class="ul-skills">
-              <li class="li-skills">JavaScript</li>
-              <li class="li-skills">HTML</li>
-              <li class="li-skills">CSS</li>
-              <li class="li-skills">React</li>
-              <li class="li-skills">Node.js</li>
-              <li class="li-skills">Bootstrap</li>
-              <li class="li-skills">Webpack</li>
-              <li class="li-skills">jQuery</li>
-              <li class="li-skills">Express.js</li>
-              <li class="li-skills">Ext.js</li>
-              <li class="li-skills">Sass</li>
-              <li class="li-skills">MongoDB</li>
-              <li class="li-skills">Python</li>
-              <li class="li-skills">Agile Methodologies</li>
-            </ul>
-          </div>
-        </div>
-        <div class="side-content"></div>
-      </div> -->
-    <!-- END SKILLS -->
-
     <!-- BEGIN CONTACT -->
-
     <div class="row blue">
       <div class="side-content"></div>
       <div class="main-content">
-        <div class="content-header">
+        <div class="content-header-form">
           <a class="anchor" name="contact"></a>
-          <h2 class="white-text">Want to hire me or need an website for your business</h2>
+          <h2 id="contact">Contact me</h2>
+          <p class="white-text">Want to hire me or need an website/design for your business? Please get in touch with me</p>
         </div>
-        <div class="contact">
-          <p><a href="mailto:thousif4023@gmail.com">Send Mail</a></p>
-          <p><a href="tel:+919948854023">Call</a></p>
+        <!-- <div class="contact">
+          <p><a href="mailto:">Send Mail</a></p>
+          <p><a href="tel:">Call</a></p>
+        </div> -->
+        <div class="contact content-body">
+          <form method="POST" action="https://formspree.io/maypnobo">
+              <input type="hidden" name="_subject" value="Contact request from personal website" />
+              <input type="email" name="_replyto" placeholder="Your email" required>
+              <textarea name="message" placeholder="Your message" required></textarea>
+              <button type="submit">Submit</button>
+          </form>
         </div>
       </div>
       <div class="side-content"></div>
@@ -338,7 +319,7 @@
         <div class="content-header">
         </div>
         <div class="content-body">
-          <p>Copyright © thousif5 2020 - All Rights Reserved</p>
+          <p>Copyright © thousif 2020 - All Rights Reserved</p>
         </div>
       </div>
       <div class="side-content"></div>
