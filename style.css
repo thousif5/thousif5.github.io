@@ -212,7 +212,7 @@ body {
   font-size: 2em;
   color: white;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 75px;
 }
 
 .jumbotron-text-skills p {
@@ -251,6 +251,30 @@ body {
   font-size: 2em;
   color: white;
   padding: 20px;
+}
+
+.getcv {
+  padding-top: 38px;
+}
+
+.getcv button {
+  width: 12%;
+  height: 7vh;
+  background: transparent;
+  border-radius: 7px;
+  padding: 5px 10px;
+  border: solid 2px #2956BE;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
+}
+
+.getcv button:hover {
+  background: #DBDBDB;
+  color: #000;
 }
 
 /*ARROW LINK*/
